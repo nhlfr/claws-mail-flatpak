@@ -1,0 +1,33 @@
+{
+    "app-id": "org.nhlfr.claws",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.22",
+    "sdk": "org.gnome.Sdk",
+    "command": "claws-mail",
+    "finish-args": [
+	"--socket=x11",
+	"--socket=wayland",
+	"--share=network",
+	"--filesystem=home"
+    ],
+    "modules": [
+	{
+	    "name": "libetpan",
+	    "sources": [
+		{
+		    "type": "git",
+		    "url": "git://github.com/dinhviethoa/libetpan.git"
+		}
+	    ]
+	},
+	{
+	    "name": "claws-main",
+	    "sources": [
+		{
+		    "type": "git",
+		    "url": "git://git.claws-mail.org/claws.git"
+		}
+	    ]
+	}
+    ]
+}
