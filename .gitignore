@@ -1,0 +1,6 @@
+*~
+*.swp
+
+/.flatpak-builder/
+/claws/
+/repo/
